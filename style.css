@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: red;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 100vh;
+}
+
+article {
+  background-color: yellow;
+  width: calc(100% - 450px);
+  min-height: 100vh;
+}
+
+aside {
+  background-color: blue;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 400px;
+  height: 100vh;
+}
+
+/*Zone centrale -------------------------------------------------------*/
+
+div#baseX3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+#facticeNav{
+  width: 50px;
+  height: 100vh;
+
+}
+
+#facticeAside{
+  width: 400px;
+  height: 100vh;
+}
