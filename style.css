@@ -4,7 +4,7 @@ body {
 }
 
 nav {
-  background-color: red;
+  background-color: #1D252A;
   position: fixed;
   left: 0;
   top: 0;
@@ -13,13 +13,13 @@ nav {
 }
 
 article {
-  background-color: yellow;
+  background-color: #2C3437;
   width: calc(100% - 450px);
   min-height: 100vh;
 }
 
 aside {
-  background-color: blue;
+  background-color: #1B2224;
   position: fixed;
   right: 0;
   top: 0;
