@@ -94,6 +94,7 @@ input#searchBoxInput:focus{ /*Le :focus dit que : quand la souris clique sur la 
   width: 300px;
   min-height: 50px;
   break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 .postHead{ /*En-tête du post*/
