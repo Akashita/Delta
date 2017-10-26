@@ -13,7 +13,7 @@
 <!-- Conteneur qui permet d'adapter la taille de la zone centrale en fonction de
 la largeur de l'écran, les deux "Factice..." sont juste la pour la taille -->
       <div id="facticeNav"></div>
-      <article>
+      <article id="center">
         <form method="post" action="" id="searchBox"> <!--A compléter avec l'ajout du php-->
            <input id="searchBoxInput" type="search" name="searchBox" placeholder="Rechercher...."> <!--Le "name" sera utile avec l'ajout du php-->
         </form>
@@ -155,7 +155,6 @@ la largeur de l'écran, les deux "Factice..." sont juste la pour la taille -->
 <!-- Fin de la répétition  -->
 
 
-
         </div>
       </article>
       <div id="facticeAside"></div>
@@ -163,7 +162,7 @@ la largeur de l'écran, les deux "Factice..." sont juste la pour la taille -->
     <aside> <!-- Sidebar à droite  -->
 
     </aside>
-
-
+    <script src="resizePost.js"></script> <!--Execution du script qui gère le nombre de colonne
+      de la zone de publication en fonction de la largeur de cette zone-->
   </body>
 </html>

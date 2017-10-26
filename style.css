@@ -86,6 +86,7 @@ input#searchBoxInput:focus{ /*Le :focus dit que : quand la souris clique sur la 
   display: inline-block;
   column-count: 4;
   max-width: calc(100vw - 450px);
+  width: auto;
 }
 
 .post{ /*Style du container du post*/
