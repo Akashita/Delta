@@ -71,6 +71,12 @@ input#searchBoxInput{
   border-bottom: 4px solid #191F21;
   background-color: #353d3f;
   transition: 0.5s ease-out;
+  background-image: url("img/loupeB.png"); /*Définition de l'image de background*/
+  background-size: 40px; /*Définition de la taille, la valeur "contain" aurait aussi marché*/
+  background-repeat: no-repeat; /*Pas de répétiton sur l'axe x et y de l'image*/
+  padding-left: 43px; /*Pour décaler le texte du "placeholder" (voir html) vers la droite,
+  et ainsi éviter la superposition du texte et de l'image*/
+  background-position: left; /*L'iimage colle le bord droit de l'élément (ici ce n'est pas obligatoire)*/
 }
 
 input#searchBoxInput:focus{ /*Le :focus dit que : quand la souris clique sur la barre de recherche,
@@ -78,6 +84,7 @@ input#searchBoxInput:focus{ /*Le :focus dit que : quand la souris clique sur la 
   outline: none; /*Supression du cadre qui apparait lors de du clique de la souris*/
   width: 40%;
   transition: 0.5s ease-out;/*Permet d'avoir une transition progressive*/
+  background-image: url("img/loupeW.png") /*Changement de l'image aprés le clic, la couleur passe donc de noir à blanc*/
 }
 
 /*Publication (Posts)------------------------------------------------*/
