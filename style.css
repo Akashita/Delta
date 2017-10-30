@@ -87,7 +87,91 @@ input#searchBoxInput:focus{ /*Le :focus dit que : quand la souris clique sur la 
   background-image: url("img/loupeW.png") /*Changement de l'image aprés le clic, la couleur passe donc de noir à blanc*/
 }
 
-/*Publication (Posts)------------------------------------------------*/
+/*Nouvelles publications (postNew)---------------------------------------*/
+
+#postGroupNew{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0 0 5px rgb(20,20,20) inset;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  border-radius: 10px;
+
+}
+
+.postNewFactice{ /*Container qui permet de placer le container "postNew" qui lui est en position absolue (mais sans coordonnées)*/
+  width: 300px;
+  height: 225px;
+  margin: 10px;
+}
+
+.postNew{
+  width: 300px;
+  height: 225px;
+  position: absolute; /*La position absolue permet que l'élément n'influe pas sur les autres, cela est utile pour le changement de hauteur
+  au passage de la souris*/
+}
+
+.postNewImg{ /*Ici l'image n'est pas integrée avec une balise <img>, mais bien en tant que background d'un élément,
+cela permet de pouvoir la rogner simplement, ce qui n'est pas possible avec la balise <img>. ATTENTION, pour comprendre ceci il faut ajouter
+les propriétés des ID "newImg1, newImg2...." ci dessous.*/
+  width: 300px;
+  height: 125px;
+  background-repeat: no-repeat;
+  background-size: cover; /*Redimentionne l'image de sorte à occuper le max du container (ne pas laisser de vide),
+  donc ici, l'image sera rognée en haut et en bas (car supérieur à 125px (height)), mais quelque soit l'image, elle occupera toute la largeur (300px)  */
+  background-position: center;
+  transition: 0.4s ease-out;
+  filter: brightness(0.5); /*Applique un filtre sur le background (la luminosité est réduite à 50%)*/
+}
+.postNewImg:hover{
+  filter: brightness(1); /*Change la valeur de la luminosité à 100% au survol de la souris*/
+}
+
+#newPost1{
+  box-shadow: none; /*Le fichier javaScript va appliquer une ombre (box shadow) au survol de la souris, ici elle est donc initialisée à une valeur nulle*/
+  transition: 0.2s ease-out;
+}
+#newPost2{
+  box-shadow: none;
+  transition: 0.2s ease-out;
+}
+#newPost3{
+  box-shadow: none;
+  transition: 0.2s ease-out;
+}
+#newPost4{
+  box-shadow: none;
+  transition: 0.2s ease-out;
+}
+
+
+
+#newImg1{
+  background-image: url(img/yolo.jpeg); /*C'est ici que l'image est définie en tant que background, cet ID est à ajouter à la classe "postNewImg" ci-dessus*/
+}
+#newImg2{
+  background-image: url(img/yolo2.jpg);
+}
+#newImg3{
+  background-image: url(img/yolo3.jpg);
+}
+#newImg4{
+  background-image: url(img/yolo.jpeg);
+}
+
+.postNewTxt{ /*Zone de texte en dessous les nouveaux posts*/
+  display: block;
+  overflow: hidden;/*Cache le texte qui dépasse du cadre (car limité à 25px en hauteur)*/
+  height: 25px; /*Cette valeur est remplacée par un fonction javaScript par "auto" lorsque
+  la souris passe au dessus de sorte à afficher la totalité du texte.*/
+  transition: 0.5s ease-out;
+  padding: 5px;
+}
+
+/*Publication (postGroup)------------------------------------------------*/
 
 .postGroup{
   display: inline-block;

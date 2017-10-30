@@ -17,6 +17,74 @@ la largeur de l'écran, les deux "Factice..." sont juste la pour la taille -->
         <form method="post" action="" id="searchBox"> <!--A compléter avec l'ajout du php-->
            <input id="searchBoxInput" type="search" name="searchBox" placeholder="Rechercher...."> <!--Le "name" sera utile avec l'ajout du php-->
         </form>
+        <div id="postGroupNew">
+          <div class="postNewFactice">
+            <div class="postNew" id="newPost1" onmouseover="ratioBackground('yolo.jpeg', 'newImg1', 'newPost1'); heightTxt('postNewTxt1', true);"
+                                               onmouseout="retourBackground('newImg1', 'newPost1'); heightTxt('postNewTxt1', false);">
+              <div class="postHead">
+
+              </div>
+              <div class="postNewImg" id="newImg1">
+
+              </div>
+              <div class="postFoot">
+                <div class="postNewTxt" id="postNewTxt1">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="postNewFactice">
+            <div class="postNew" id="newPost2" onmouseover="ratioBackground('yolo2.jpg', 'newImg2', 'newPost2'); heightTxt('postNewTxt2', true);"
+                                               onmouseout="retourBackground('newImg2', 'newPost2'); heightTxt('postNewTxt2', false);">
+              <div class="postHead">
+
+              </div>
+              <div class="postNewImg" id="newImg2">
+
+              </div>
+              <div class="postFoot">
+                <div class="postNewTxt" id="postNewTxt2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="postNewFactice">
+            <div class="postNew" id="newPost3" onmouseover="ratioBackground('yolo3.jpg', 'newImg3', 'newPost3'); heightTxt('postNewTxt3', true);"
+                                               onmouseout="retourBackground('newImg3', 'newPost3'); heightTxt('postNewTxt3', false);">
+              <div class="postHead">
+
+              </div>
+              <div class="postNewImg" id="newImg3">
+
+              </div>
+              <div class="postFoot">
+                <div class="postNewTxt" id="postNewTxt3">
+                Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="postNewFactice">
+            <div class="postNew" id="newPost4" onmouseover="ratioBackground('yolo.jpeg', 'newImg4', 'newPost4'); heightTxt('postNewTxt4', true);"
+                                               onmouseout="retourBackground('newImg4', 'newPost4'); heightTxt('postNewTxt4', false);">
+              <div class="postHead">
+
+              </div>
+              <div class="postNewImg" id="newImg4">
+
+              </div>
+              <div class="postFoot">
+                <div class="postNewTxt" id="postNewTxt4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing.
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
         <div class="postGroup">
           <!-- Syntaxe type d'une publication-->
           <div class="post"> <!-- Déclaration de la publication-->
@@ -164,5 +232,6 @@ la largeur de l'écran, les deux "Factice..." sont juste la pour la taille -->
     </aside>
     <script src="resizePost.js"></script> <!--Execution du script qui gère le nombre de colonne
       de la zone de publication en fonction de la largeur de cette zone-->
+    <script src="backNewPost.js"></script>
   </body>
 </html>
