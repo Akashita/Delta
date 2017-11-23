@@ -148,6 +148,60 @@ les propriétés des ID "newImg1, newImg2...." ci dessous.*/
 }
 
 
+.header-menu-button-close .header-menu-nav-icon {
+    animation-name: burger_close;
+    animation-duration: 0s;
+    animation-delay: .25s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+
+.header-menu-button-close .header-menu-nav-icon::before {
+    animation-name: burger_before_close;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+.header-menu-button-close .header-menu-nav-icon::after {
+    animation-name: burger_after_close;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+.header-menu-nav-icon {
+    position: relative;
+    top: 17px;
+    margin-left: 10px;
+    width: 21px;
+    height: 1px;
+    background: #006f9a;
+}
+
+.header-menu-nav-icon::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #006f9a;
+    position: relative;
+    bottom: 7px;
+}
+
+.header-menu-nav-icon::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #006f9a;
+    position: relative;
+    top: 6px;
+    transition: .8s ease-in-out;
+}
 
 #newImg1{
   background-image: url(img/yolo.jpeg); /*C'est ici que l'image est définie en tant que background, cet ID est à ajouter à la classe "postNewImg" ci-dessus*/
