@@ -6,6 +6,7 @@ function uneColonne (){
     choix[i].style.columnCount = 1; //Nombre de colonne = 1
     choix[i].style.width = "300px"; //Largeur = 300px
   }
+  document.getElementById('postGroupNew').style.columnCount = "1";
 }
 
 function deuxColonnes (){
@@ -14,6 +15,7 @@ function deuxColonnes (){
     choix[i].style.columnCount = 2;
     choix[i].style.width = "620px";
   }
+  document.getElementById('postGroupNew').style.columnCount = "2";
 }
 
 function troisColonnes (){
@@ -22,6 +24,7 @@ function troisColonnes (){
     choix[i].style.columnCount = 3;
     choix[i].style.width = "940px";
   }
+  document.getElementById('postGroupNew').style.columnCount = "2";
 }
 
 function quatreColonnes (){
@@ -30,6 +33,7 @@ function quatreColonnes (){
     choix[i].style.columnCount = 4;
     choix[i].style.width = "1280px";
   }
+  document.getElementById('postGroupNew').style.columnCount = "4";
 }
 
 function gestColonnes(){

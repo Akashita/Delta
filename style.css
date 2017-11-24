@@ -10,6 +10,7 @@ nav {
   top: 0;
   width: 50px;
   height: 100vh;
+  z-index: 10;
 }
 
 article {
@@ -20,6 +21,7 @@ article {
   background-color: #2C3437;
   width: calc(100vw - 450px);
   min-height: 100vh;
+  z-index: 9;
 }
 
 aside {
@@ -29,6 +31,7 @@ aside {
   top: 0;
   width: 400px;
   height: 100vh;
+  z-index: 9;
 }
 
 /*Zone centrale -------------------------------------------------------*/
@@ -90,10 +93,9 @@ input#searchBoxInput:focus{ /*Le :focus dit que : quand la souris clique sur la 
 /*Nouvelles publications (postNew)---------------------------------------*/
 
 #postGroupNew{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
+  column-count: 1;
+  column-gap: 10px;
+  padding: 20px 20px 10px 20px;
   box-shadow: 0 0 5px rgb(20,20,20) inset;
   background-color: rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
@@ -104,7 +106,8 @@ input#searchBoxInput:focus{ /*Le :focus dit que : quand la souris clique sur la 
 .postNewFactice{ /*Container qui permet de placer le container "postNew" qui lui est en position absolue (mais sans coordonnées)*/
   width: 300px;
   height: 225px;
-  margin: 10px;
+  background: none;
+  margin-bottom: 10px;
 }
 
 .postNew{
@@ -131,18 +134,22 @@ les propriétés des ID "newImg1, newImg2...." ci dessous.*/
 }
 
 #newPost1{
+  z-index: 4;
   box-shadow: none; /*Le fichier javaScript va appliquer une ombre (box shadow) au survol de la souris, ici elle est donc initialisée à une valeur nulle*/
   transition: 0.2s ease-out;
 }
 #newPost2{
+  z-index: 3;
   box-shadow: none;
   transition: 0.2s ease-out;
 }
 #newPost3{
+  z-index: 2;
   box-shadow: none;
   transition: 0.2s ease-out;
 }
 #newPost4{
+  z-index: 1;
   box-shadow: none;
   transition: 0.2s ease-out;
 }
